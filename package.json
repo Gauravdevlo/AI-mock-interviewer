@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": " next build",
     "start": "next start",
     "lint": "next lint",
     "db:push": "npx drizzle-kit push",
-    "db:studio": "npx drizzle-kit studio"
+    "db:studio": "npx drizzle-kit studio",
+    "build": "NEXT_DISABLE_ESLINT=1 next build",
+    "deploy": "vercel build && vercel deploy --prod"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.10.1",
@@ -38,7 +39,8 @@
     "react-webcam": "^7.2.0",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
-    "uuid": "^11.0.5"
+    "uuid": "^11.0.5",
+    "vercel": "^41.1.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
