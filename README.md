@@ -54,7 +54,7 @@ Follow these steps to **set up the project locally**:
 ### 1️⃣ **Clone the repository**
 
 ```sh
-git clone https://github.com/gauravvbh/AI-Mock-Interviewer.git
+git clone https://github.com/Gauravdevlo/AI-mock-interviewer.git
 cd AI-Mock-Interviewer
 ```
 
